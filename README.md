@@ -3,7 +3,10 @@
 [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange.svg)](https://www.tensorflow.org/)
 
 <p align="justify">This project focuses on evaluating multiple deep learning models for accurate brain stroke detection using neuroimaging data. It includes preprocessing techniques, dataset preparation, and model training using architectures such as VGG16, ResNet, DenseNet-201, and EfficientNet. A consistent experimental setup is applied to ensure fair comparison based on performance metrics like accuracy, precision, recall, and F1-score. The objective is to identify the most reliable and computationally efficient model for automated stroke diagnosis. It is designed to support research in medical imaging and assist in developing practical, data-driven clinical decision support systems.</p>
-<img width="841" height="601" alt="Proposed Framework" src="https://github.com/user-attachments/assets/e21c0d38-fe03-4c47-b48c-6b90dab9f6e2" />
+
+<p align="center">
+  <img width="841" height="601" alt="Proposed Framework" src="https://github.com/user-attachments/assets/e21c0d38-fe03-4c47-b48c-6b90dab9f6e2" />
+</p>
 
 ### 🎯 Key Objectives
 
@@ -22,16 +25,6 @@
 | **EfficientNetB0** | 5.3M | 224×224 | Efficient scaling |
 
 ## Dataset
-Dataset Structure:
-```bash
-dataset/
-├── Training/ 
-│       ├── Normal/ (# images)
-│       └── Stroke/ (# images)
-└─── Testing/
-        ├── Normal/ (# images)
-        └── Stroke/ (# images)
-```
 
 <table align="center">
   <tr>
@@ -48,6 +41,33 @@ dataset/
   </tr>
 </table>
 
+> [!IMPORTANT]
+> The complete project utilizes a custom dataset collected from two renowned hospitals, supplemented with images from additional online sources. Due to data privacy and institutional policies, the full hospital dataset cannot be publicly shared.
+
+#### Dataset Structure:
+```bash
+dataset/
+├── Training/ 
+│       ├── Normal/ (# images)
+│       └── Stroke/ (# images)
+└─── Testing/
+        ├── Normal/ (# images)
+        └── Stroke/ (# images)
+```
+
+#### Demonstration Dataset
+For model development, testing, and reproducibility, a publicly available brain CT dataset is used. This dataset is suitable for:
+
+- Initial model architecture validation
+- Pipeline testing and debugging  
+- Code reproducibility across different environments
+
+**Limitation:** This demonstration dataset is relatively small in size. Results obtained from this dataset may not fully represent real-world clinical performance. The custom hospital dataset provides more robust training and evaluation.
+
+The demonstration dataset used in this repository is available at:
+```bash
+https://www.kaggle.com/datasets/afridirahman/brain-stroke-ct-image-dataset
+```
 
 ## Prerequisites
 
